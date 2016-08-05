@@ -2,8 +2,8 @@ local only = require ("only")
 local scan = require ("scan")
 local mysql_api = require ("mysql_pool_api")
 
-local ROW_COUNT = 10896051			--> SGID表总行数
-local DB_LINK   = "app_sort_tt"			--> link文件配置的sql数据库地址
+local ROW_COUNT = 10896051		--> SGID表总行数
+local DB_LINK   = "app_sort_tt"		--> link文件配置的sql数据库地址
 
 local TABLE = {
 		t1 = "SG",
