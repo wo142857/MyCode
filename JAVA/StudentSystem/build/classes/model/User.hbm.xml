@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!-- name类名，table表名 -->
+	<class name="model.User" table="login">
+		<id name="user" column="user" type="string"></id>
+		<!-- 下面是字段映射 name属性,column是字段 type数据库类型 -->
+		<property name="password" column="password" type="string"></property>
+		<property name="name" column="name" type="string"></property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<constant name="struts.devMode" value="true" />
+<constant name="struts.multipart.maxSize" value="1000000"></constant>
+   <package name="helloworld" extends="struts-default">     
+      <action name="hello" 
+            class="action.HelloWorldAction" 
+            method="execute">
+            <interceptor-ref name="timer" />
+            <interceptor-ref name="basicStack"/>
+            <result name="success">/HelloWorld.jsp</result>
+            <result name="error">/AccessDenied.jsp</result>
+      </action>
+      <action name="upload" class="action.UploadAction"
+      		method="execute">
+      		<interceptor-ref name="basicStack"/>
+      		<interceptor-ref name="fileUpload">
+      			<param name="allowTypes">image/jpg,image/gif</param>
+      		</interceptor-ref>
+      		<result name="success">/upSuccess.jsp</result>
+      		<result name="error">/upError.jsp</result>
+      </action>
+      <action name="login" class="action.LoginAction"
+      		method="execute">
+      		<result name="success">/HelloWorld.jsp</result>
+      		<result name="error">/AccessDenied.jsp</result>
+      </action>
+      <action name="empinfo" class="action.Employee" 
+      		method="execute">
+      		<result name="input">/index.jsp</result>
+      		<result name="success">/HelloWorld.jsp</result>
+      </action>
+   </package>
+</struts>
