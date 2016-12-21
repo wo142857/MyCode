@@ -6,6 +6,9 @@ scan      scan函数
 only      log函数
 urlReplace  redis url处理
 api_save_rtrpic_fromio  你看我拍上传图片接口
+##SHELL
+ts2mp4    整合ts视频文件，按mp4格式输出
+setpts_atempo   实现视频音频同步加速减速功能
 ##PYTHON
 weather   网络天气爬虫，支持多历史天数一次爬取，最多一个月。
 downPic   下载网络图片。
