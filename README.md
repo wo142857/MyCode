@@ -1,6 +1,7 @@
 # MyCode
 
 ##LUA
+log-module  log模块，支持卓易云代码日志和openresty日志，可调整日志等级，打印table结构
 lineTopo  建立道路连接关系。
 scan      scan函数
 only      log函数

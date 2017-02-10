@@ -4,11 +4,11 @@ module('only', package.seeall)
 
 --[[=================================LOG FUNCTION=======================================]]--
 local logLV = {
-	D = {1, "LOG_ON-OFF_DEBUG",     "[DEBUG]"       },
-	I = {2, "LOG_ON-OFF_INFO",      "[INFO]"        },
-	W = {3, "LOG_ON-OFF_WARN",	"[WARN]"	},
-	E = {4, "LOG_ON-OFF_ERROR",     "[ERROR]"       },
-	S = {9, "LOG_ON_SYSTEM",        "[SYSTEM]"      },
+	D = {1, "LOG_ON-OFF_DEBUG", "[DEBUG]"   },
+	I = {2, "LOG_ON-OFF_INFO",  "[INFO]"    },
+	W = {3, "LOG_ON-OFF_WARN",	"[WARN]"    },
+	E = {4, "LOG_ON-OFF_ERROR", "[ERROR]"   },
+	S = {9, "LOG_ON_SYSTEM",    "[SYSTEM]"  },
 
 	verbose = cfg["LOGLV"],
 }

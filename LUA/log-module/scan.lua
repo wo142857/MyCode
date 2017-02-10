@@ -1,5 +1,3 @@
-
---module("scan", package.seeall)
 local _M = {}
 function _M.dump(obj)
 	local getIndent, quoteStr, wrapKey, wrapVal, dumpObj
