@@ -1,7 +1,7 @@
 # MyCode
 
 ##LUA
-common  common函数，提供string.split， string.trim， string.mask（字符串计数，汉字字母符号都计1）
+common函数，提供string.split， string.trim， string.mask（字符串计数，汉字字母符号都计1）;
 log-module  log模块，支持卓易云代码日志和openresty日志，可调整日志等级，打印table结构；
 lineTopo  建立道路连接关系；
 scan      scan函数；
