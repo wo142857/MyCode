@@ -9,7 +9,7 @@ log-module  log模块，支持卓易云代码日志和openresty日志，可调�
 
 lineTopo  建立道路连接关系；
 
-scan      scan函数；
+scan      scan.dump函数；
 
 only      log函数；
 
