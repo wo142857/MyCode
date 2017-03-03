@@ -1,9 +1,10 @@
 1. Lua 中 nil 和 ngx.null
+    [轻量用户数据](http://www.lua.org/pil/28.5.html)
 ```
     nil 表示“无效值”；
-    ngx.null 常量是一个 NULL 的[轻量用户数据](http://www.lua.org/pil/28.5.html) ，一般被用来表达 Lua table 等里面的 nil (空) 值，类似于 lua-cjson 库中的 cjson.null 常量。
+    ngx.null 常量是一个 NULL 的轻量用户数据，一般被用来表达 Lua table 等里面的 nil (空) 值，
+        类似于 lua-cjson 库中的 cjson.null 常量。
 ```
-
 2. Lua 优先级
 ```lua
     ^                   -- 幂
@@ -15,7 +16,6 @@
     and
     or
 ```
-
 3. Lua 标准库提供了几种迭代器,包括用于
 ```
     迭代文件中每行的(io.lines)、
