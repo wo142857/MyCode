@@ -107,4 +107,4 @@ print(2, (init()))  --> output 2 1
     print("tbl 长度 ", #tbl)                --> output tbl 长度 4
     print("tbl 最大值 ", table_maxn(tbl))   --> output tbl 最大值 26
 ```
-#### 邮件正则匹配表达式：```'^[%w_%.]+@[%w_%.]+%.[%w]+$'```
+#### 邮件正则匹配表达式：```'^[%w_]+.+@[%w_]+.+%.[%w]+$'```
