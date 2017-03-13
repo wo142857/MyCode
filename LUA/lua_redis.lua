@@ -66,7 +66,8 @@ repeat
     
             log.D('get response body: ' .. scan.dump(response_body))
     
-            local response = cjson.decode(response_body[1])
+            -- 防止返回长度过长的数组结构
+            local response = cjson.decode(table.concat(response_body, ''))
             if response.Code == 0 and response.Result.list then
                 -- 遍历单个插入
                 for k, v in ipairs(response.Result.list) do
