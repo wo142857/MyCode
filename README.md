@@ -2,6 +2,8 @@
 
 ##LUA
 
+lua_redis   利用 redis 作为中间存储的消息中间件，调用的时 luasec 库，里面包含 redis 的 lua 脚本访问方法和 https 的 lua 脚本访问方法；还有一段利用 loadstring 函数将 lua 数组的元素批量插入 redis 消息列表的方法，性能测试结果：遍历247次插入需要7毫秒，一次批量插入需要1毫秒。但是似乎 loadstring 函数最多仅支持247个参数，与 load 字符串的长度无关。
+
 ngx_lua_utils.md    学习和代码过程中的使用 ngx 和 lua 过程中的一些笔记。
 
 resty_backup    openresty 项目目录模板，复制此目录结构到本地任意位置，将api代码放在interface目录下，并将文件名添加之list.lua文件中；用root用户启动脚本openresty_start.sh文件，包括start stop reload命令；
