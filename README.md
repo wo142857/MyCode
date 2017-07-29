@@ -1,6 +1,6 @@
 # MyCode
 
-## LUA
+## Lua
 
 MQ  消息中间件，结合一系列 openAPI 形成一组push系统。代码中使用到 luasec、copas、等库。
 
