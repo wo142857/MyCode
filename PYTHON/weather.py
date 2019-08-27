@@ -9,10 +9,7 @@ from HTMLParser import HTMLParser
 from pypinyin import pinyin, lazy_pinyin
 import MySQLdb
 import time
-from datetime import datetime
-import datetime as dt
-
-def get_html(city):
+from datetime import datetime import datetime as dt def get_html(city):
 	url = "http://www.tianqihoubao.com/weather/top/%s.html" % city
 #	print url
 	try:
